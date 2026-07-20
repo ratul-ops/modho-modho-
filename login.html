@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Torch Bulb + Login</title>
+  <!-- নতুন CSS ফাইল -->
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+  <!-- Bulb -->
+  <div id="bulb"></div>
+  
+  <!-- Switch Button -->
+  <button id="switchBtn" onclick="toggleBulb()">Torch Off</button>
+
+  <!-- Login Box -->
+  <div id="loginBox" class="hidden">
+    <h3>WELCOME BACK 2.0</h3>
+    <input type="text" id="username" placeholder="Username"><br>
+    <input type="password" id="password" placeholder="Enter Password"><br>
+    <button onclick="checkLogin()">Login</button>
+    <p><a href="#">Forgot Password?</a></p>
+    <p id="message"></p>
+  </div>
+
+  <!-- নতুন JS ফাইল -->
+  <script src="login.js"></script>
+</body>
+</html>
